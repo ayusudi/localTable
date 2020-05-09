@@ -46,11 +46,20 @@ APIKEY="REPLACE_WITH_AIRTABLE_APIKEY"
 
 ## Demo :robot:
 
-![done](/assets/done.png)
+
+![demo](https://drive.google.com/uc?export=view&id=15xIDnm2he6RsmvBV7kkLu5vx801xyuZp)
+
+![done](./assets/done.png)
 
 
 
+## Clue
 
-Clue
+clue for : 
+
+- base_id
+- table_name
+- field_name
+- buddy_id
 
 ![clue](https://drive.google.com/uc?export=view&id=1jTOEV0C0kFxot454HHCfGYfbyR0vTj6d)
