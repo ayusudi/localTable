@@ -1,4 +1,5 @@
 > ###### localtable
+<meta property="og:title" content="Local Table"/>
 
 #  :file_cabinet: :house: LOCAL TABLE 
 
