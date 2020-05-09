@@ -1,5 +1,5 @@
 > ###### localtable
-<meta property="og:title" content="Local Table"/>
+
 #  :file_cabinet: :house: LOCAL TABLE 
 
 ##### Local Table help you download file from airtable to your local computer with command line
