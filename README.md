@@ -7,7 +7,9 @@
 <u>**Note :**</u><br>
 If you're instrested to fetching files link without download to local.<br>
 please follow this information :arrow_heading_down:<br>
+
 ![info](./assets/dowloadData.png)​
+
 **find this code** in `localTable.js` and `localSpecific.js`
 
 > ######  :rocket: Local Tabel faster than GUI
@@ -63,3 +65,7 @@ clue for :
 - buddy_id
 
 ![clue](https://drive.google.com/uc?export=view&id=1jTOEV0C0kFxot454HHCfGYfbyR0vTj6d)
+
+### References GIF ( Demo & Clue )
+- [Clue](https://drive.google.com/uc?export=view&id=1jTOEV0C0kFxot454HHCfGYfbyR0vTj6dm)
+- [Demo](https://drive.google.com/uc?export=view&id=15xIDnm2he6RsmvBV7kkLu5vx801xyuZp)
