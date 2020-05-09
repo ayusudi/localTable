@@ -1,5 +1,5 @@
 function getFiles(datas, key) {
-    key = key || 'Soal'
+    key = key || 'Anchor'
     let result = []
     for (let name in datas.fields) {
         if (name.includes(key)) {
