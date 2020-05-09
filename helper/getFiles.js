@@ -1,7 +1,8 @@
-function getFiles(datas){
+function getFiles(datas, key) {
+    key = key || 'Soal'
     let result = []
     for (let name in datas.fields) {
-        if (name.includes('Soal')) {
+        if (name.includes(key)) {
             result.push({
                 name: name.split(' ').join('').toLowerCase() + '.js',
                 link: datas.fields[name][0].url

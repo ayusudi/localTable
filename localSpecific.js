@@ -1,5 +1,5 @@
 require('dotenv').config()
-const [baseID, tableName, buddyID] = process.argv.slice(2)  // [String, String, String]
+const [baseID, tableName, fieldName] = process.argv.slice(2)  // [String, String, String]
 const getFiles = require('./helper/getFiles')
 const Airtable = require('./config/airtable');
 const base = Airtable.base(baseID)
@@ -9,16 +9,15 @@ base(tableName).select({
 	view: "Grid view"
 }).eachPage((records, fetchNextPage) => {
 	const [day, date, month, year] = new Date(records[0]._rawJson.createdTime).toUTCString().split(' ')
-	const studentFolders = buddyID ? records.filter(record => record.fields.Buddy.includes(buddyID)) : records
-	const datas = studentFolders.map((task) => {
+	const studentFolders = records.map((task) => {
 		return {
 			"folder-name": task.get('Name').split(' ').join('-').toLowerCase(),
-			files: getFiles(task)
+			files: getFiles(task, fieldName)
 		}
 	})
 	let folder = {
-		name: `${month}${year}-${tableName.replace(/\s/g, '')}`.toLowerCase(),
-		studentFolders: datas
+		name: `${month}${year}-${tableName.replace(/\s/g, '')}-${fieldName}`.toLowerCase(),
+		studentFolders
 	}
 	console.log(JSON.stringify(folder, null, 2))
 	fetchNextPage();
