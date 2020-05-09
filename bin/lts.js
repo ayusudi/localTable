@@ -3,7 +3,7 @@ const shell = require("shelljs");
 const argv = process.argv.slice(2)
 const [baseID, tableName, fieldName] = argv
 
-if (process.argv > 2) {
+if (argv.length > 2) {
 	shell.exec(`node localSpecific.js "${baseID}" "${tableName}" "${fieldName}"`)
 } else {
 	console.log(`
