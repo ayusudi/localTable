@@ -1,0 +1,17 @@
+{
+  "name": "localtable",
+  "version": "1.0.0",
+  "description": "fetching database ",
+  "main": "localTable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ayusudi",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.8.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
