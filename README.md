@@ -1,6 +1,5 @@
 > ###### localtable
 <meta property="og:title" content="Local Table"/>
-
 #  :file_cabinet: :house: LOCAL TABLE 
 
 ##### Local Table help you download file from airtable to your local computer with command line
@@ -17,10 +16,12 @@ please follow this information :arrow_heading_down:<br>
 
 ## Getting Started
 
-```
-npm install 
-npm link 
-touch .env 
+```bash
+$ git clone https://github.com/ayusudi/localTable.git
+$ cd localTable
+$ npm install 
+$ npm link 
+$ touch .env 
 ```
 
 **Write your env with this template**
@@ -43,9 +44,13 @@ APIKEY="REPLACE_WITH_AIRTABLE_APIKEY"
 
 <br>
 
-## Complete :white_check_mark:
+## Demo :robot:
 
-![done](./assets/done.png)
+![done](/assets/done.png)
 
 
 
+
+Clue
+
+![clue](https://drive.google.com/uc?export=view&id=1jTOEV0C0kFxot454HHCfGYfbyR0vTj6d)

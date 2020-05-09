@@ -23,7 +23,7 @@ base(tableName).select({
 
 	downloadData(folder) 
 	// If you're not interest to get file in local,
-	// comment function downloadData(folder) and uncomment line below
+	// comment downloadData(folder) and uncomment line below
 	// console.log(JSON.stringify(folder, null, 2)) 
 
 	fetchNextPage();
