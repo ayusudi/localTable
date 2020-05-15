@@ -10,7 +10,8 @@ base(tableName).select({
 	view: "Grid view"
 }).eachPage((records, fetchNextPage) => {
 	const [day, date, month, year] = new Date(records[0]._rawJson.createdTime).toUTCString().split(' ')
-	const studentFolders = records.map((task) => {
+	const filterRecords = records.filter(record => record.fields.Batch.includes(process.env.CAMPUS_ID))
+	const studentFolders = filterRecords.map((task) => {
 		return {
 			"folder-name": task.get('Name').split(' ').join('-').toLowerCase(),
 			files: getFiles(task, fieldName)
